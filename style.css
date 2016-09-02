@@ -1,0 +1,131 @@
+body {
+    background-color: cornflowerblue;
+    margin: 0;
+    overflow: auto; 
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: right;
+    font-size: 24px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 24px;
+    text-decoration: none;
+}
+
+li a:hover:not(.left) {
+    background-color: grey;
+}
+
+div {
+    text-align: center;
+}
+
+table {
+    background-color: none;
+    margin: 0;
+    padding: 0;
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+textarea {
+    resize: none;
+    width: 300px;
+    height: 150px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input {
+    font-family: 'Montserrat', sans-serif;
+    border-bottom-color: transparent;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+input[type="button"], input[type="submit"] {
+    background-color: #333;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 2px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-bottom-color: transparent;
+}
+
+textarea {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    border-bottom-color: transparent;
+}
+
+.message {
+    width: 500px;
+    height: 313px;
+    font-size: 16px;
+    padding: 16px;
+    margin-left: -1px;
+}
+
+.input {
+    width: 500px;
+    height: 15px;
+    font-size: 16px;
+    padding: 16px;
+}
+
+#home {
+    background-image: url("clouds.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+}
+
+#about {
+    background-image: url(nightsky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+}
+
+#resume {
+    background-image: url(IMG_1043.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+}
+
+#contact {
+    background-image: url(Yosemite%20Tunnel%20View.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+}
+
+img {
+    border:10px solid white;
+}

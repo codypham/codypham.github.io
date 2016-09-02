@@ -1,85 +1,109 @@
 <!DOCTYPE HTML>
-<html>
 <head>
-<title>Cody Pham</title>
-<link rel="shortcut icon" href="picture.png"/>
-<meta charset="utf-8">
-<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" rel="stylesheet">
-<script src="js/jquery-1.9.1.min.js"></script>
-<script src="css/5grid/init.js?use=mobile,desktop"></script>
-<script src="js/jquery.formerize-1.1.js"></script>
-<script src="js/init.js"></script>
-<noscript>
-<link rel="stylesheet" href="css/5grid/core.css">
-<link rel="stylesheet" href="css/5grid/core-desktop.css">
-<link rel="stylesheet" href="css/5grid/core-1200px.css">
-<link rel="stylesheet" href="css/5grid/core-noscript.css">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/style-desktop.css">
-<link rel="stylesheet" href="css/noscript.css">
-</noscript>
-<!--[if lte IE 8]>
-<link rel="stylesheet" href="css/ie8.css">
-<![endif]-->
+    <meta charset="utf-8">
+    <meta name="author" content="Cody Pham">
+    <meta name="description" content="The Website of Cody Pham">
+    <meta name="keywords" content="Cody,Pham">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="picture.png"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <title>Cody Pham</title>
 </head>
-<body class="homepage">
-<div id="wrapper">
-  <nav id="nav"> <a href="#me" class="icon icon-user active"><span>Me</span></a> <a href="Resume.pdf" target="_blank" class="icon icon-folder"><span>Resume</span></a> <a href="mailto:cjpham@ucsd.edu" class="icon icon-mail"><span>Contact Me</span></a> <a href="https://www.linkedin.com/in/codypham" target="_blank" class="icon icon-linkedin"><span>LinkedIn</span></a> </nav>
-  <div id="main">
-    <article id="me" class="panel">
-      <header>
-        <h1>Cody Pham</h1>
-        <span class="byline">Aspiring Software Engineer</span> </header>
-      <a href="#work" class="jumplink pic"> <img src="me.jpg"alt=""> </a> </article>
-    <article id="work" class="panel">
-      <header>
-        <h2>Resume</h2>
-      </header>
-      <p> I am a second year computer science undergraduate at UC San Diego.</p>
-      <section class="5grid is-gallery">
-        <img src="picture.jpg" align="middle">
-      </section>
-    </article>
-    <article id="email" class="panel">
-      <header>
-        <h2>Contact Me</h2>
-      </header>
-      <form action="#" method="post">
-
-        <div class="5grid">
-          <div class="row">
-            <div class="6u">
-              <input type="text" class="text" name="name" placeholder="Name">
+<html>
+    <body>
+        <header>
+            <div>
+                <nav>
+                    <ul>
+                        <li style="float:left"><a href="#home" class="left">CODY PHAM</a></li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/codypham" target="_blank">LINKEDIN</a>
+                        </li>
+                        <li><a href="#contact">CONTACT</a></li>
+                        <li><a href="#resume">RESUME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                    </ul> 
+                </nav>
             </div>
-            <div class="6u">
-              <input type="text" class="text" name="email" placeholder="Email">
+        </header>
+        <div>
+            <div id="home" style="display:flex;justify-content:center;align-items:center;">
+                <table>
+                    <tr>
+                        <td style="color:white; padding:30px">
+                            <table>
+                                <tr>
+                                    <td style="font-size:75px;">Cody Pham</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size:40px">Aspiring Software Engineer</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="padding:30px">
+                            <img src="me.jpg" width="400px" height="400px" border="10">
+                        </td>
+                    </tr>
+                </table>
             </div>
-          </div>
-          <div class="row">
-            <div class="12u">
-              <input type="text" class="text" name="subject" placeholder="Subject">
+            <div id="about" style="display:flex;justify-content:center;align-items:center;">
+                <table style="max-width:1000px">
+                    <tr>
+                        <td style="font-size:72px; color:white;">About Me</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size:24px; color:white">I am a third year computer science major at UC San Diego seeking a summer internship in software development.</td>
+                    </tr>
+                </table>
             </div>
-          </div>
-          <div class="row">
-            <div class="12u">
-              <textarea name="message" placeholder="Message"></textarea>
+            <div id="resume" style="display:flex;justify-content:center;align-items:center; color:white">
+                <table>
+                    <tr>
+                        <td style="font-size:48px">
+                            Resume
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" value="View" onclick="window.open('Resume.pdf')">
+                        </td>
+                    </tr>
+                </table>
             </div>
-          </div>
-          <div class="row">
-            <div class="12u">
-              <input type="submit" class="button" value="Send Message">
+            <div id="contact" style="display:flex;justify-content:center;align-items:center;">
+                <form action="https://formspree.io/codyjpham@gmail.com" method="POST">
+                    <table style="padding-top:75px">
+                        <tbody>
+                            <tr>
+                                <td style="font-size:48px; color:white;">
+                                    Contact
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1">
+                                    <input type="email" name="_replyto" placeholder="Email" class="input">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1">
+                                    <input type="text" name="_subject" placeholder="Subject" class="input" style="margin-top: 10px; margin-bottom:10px">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <textarea name="body" placeholder="Message" class="message"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="submit" value="Send">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
             </div>
-          </div>
         </div>
-      </form>
-    </article>
-  </div>
-  <div id="footer">
-    <ul class="links">
-      <li>&copy; Cody Pham 2016</li>
-      <li>Design : <a href="http://html5up.net/">HTML5 Up!</a></li>
-    </ul>
-  </div>
-</div>
-</body>
+    </body>
 </html>
