@@ -28,6 +28,12 @@ li a {
     text-align: center;
     padding: 20px 24px;
     text-decoration: none;
+    cursor: pointer;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
 }
 
 li a:hover:not(.left) {
@@ -84,6 +90,8 @@ input[type="button"], input[type="submit"] {
     outline: none;
     border: none;
     border-bottom-color: transparent;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
 }
 
 textarea {
