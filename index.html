@@ -5,9 +5,9 @@
     <meta name="description" content="The Website of Cody Pham">
     <meta name="keywords" content="Cody,Pham">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="shortcut icon" href="picture.png"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="script.js"></script>
+    <link rel="shortcut icon" href="images/picture.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="smooth-scroll.js"></script>
     <title>Cody Pham</title>
 </head>
 <html>
@@ -15,26 +15,29 @@
         <header>
             <div>
                 <nav>
-                    <ul>
-                        <li style="float:left"><a href="#home" class="left">CODY PHAM</a></li>
+                    <ul id="nav_bar">
+                        <li style="float:left"><a data-scroll href="#home" class="left">CODY PHAM</a></li>
                         <li>
                             <a href="https://www.linkedin.com/in/codypham" target="_blank">LINKEDIN</a>
                         </li>
-                        <li><a href="#contact">CONTACT</a></li>
-                        <li><a href="#resume">RESUME</a></li>
-                        <li><a href="#about">ABOUT</a></li>
+                        <li>
+                            <a href="https://github.com/codypham" target="_blank">GITHUB</a>
+                        </li>
+                        <li><a data-scroll href="#contact">CONTACT</a></li>
+                        <li><a data-scroll href="#resume">RESUME</a></li>
+                        <li><a data-scroll href="#about">ABOUT</a></li>
                     </ul> 
                 </nav>
             </div>
         </header>
         <div>
-            <div id="home" style="display:flex;justify-content:center;align-items:center;">
+            <div id="home" style="background-image: url(images/clouds.jpg);">
                 <table>
                     <tr>
-                        <td style="color:white; padding:30px">
+                        <td style="padding:30px">
                             <table>
                                 <tr>
-                                    <td style="font-size:75px;">Cody Pham</td>
+                                    <td style="font-size:80px;">Cody Pham</td>
                                 </tr>
                                 <tr>
                                     <td style="font-size:40px">Aspiring Software Engineer</td>
@@ -42,25 +45,25 @@
                             </table>
                         </td>
                         <td style="padding:30px">
-                            <img src="me.jpg" width="400px" height="400px" border="10">
+                            <img src="images/me.jpg" width="400px" height="400px" border="10">
                         </td>
                     </tr>
                 </table>
             </div>
-            <div id="about" style="display:flex;justify-content:center;align-items:center;">
+            <div id="about" style="background-image: url(images/nightsky.jpg);">
                 <table style="max-width:1000px">
                     <tr>
-                        <td style="font-size:72px; color:white;">About Me</td>
+                        <td class="sec_title">About Me</td>
                     </tr>
                     <tr>
-                        <td style="font-size:24px; color:white">I am a third year computer science major at UC San Diego seeking a summer internship in software development.</td>
+                        <td style="font-size:24px;">I am a third year computer science major at UC San Diego seeking a summer internship in software development.</td>
                     </tr>
                 </table>
             </div>
-            <div id="resume" style="display:flex;justify-content:center;align-items:center; color:white">
+            <div id="resume" style="background-image: url(images/IMG_1043.JPG);">
                 <table>
                     <tr>
-                        <td style="font-size:48px">
+                        <td class="sec_title">
                             Resume
                         </td>
                     </tr>
@@ -71,27 +74,27 @@
                     </tr>
                 </table>
             </div>
-            <div id="contact" style="display:flex;justify-content:center;align-items:center;">
+            <div id="contact" style="background-image: url(images/Yosemite%20Tunnel%20View.jpg);">
                 <form action="https://formspree.io/codyjpham@gmail.com" method="POST">
                     <table style="padding-top:75px">
                         <tbody>
                             <tr>
-                                <td style="font-size:48px; color:white;">
+                                <td class="sec_title">
                                     Contact
                                 </td>
                             </tr>
                             <tr>
-                                <td rowspan="1">
+                                <td>
                                     <input type="email" name="_replyto" placeholder="Email" class="input">
                                 </td>
                             </tr>
                             <tr>
-                                <td rowspan="1">
+                                <td>
                                     <input type="text" name="_subject" placeholder="Subject" class="input" style="margin-top: 10px; margin-bottom:10px">
                                 </td>
                             </tr>
                             <tr>
-                                <td colspan="2">
+                                <td>
                                     <textarea name="body" placeholder="Message" class="message"></textarea>
                                 </td>
                             </tr>
@@ -107,3 +110,8 @@
         </div>
     </body>
 </html>
+<footer>
+    <script>
+        smoothScroll.init();
+    </script>
+</footer>

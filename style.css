@@ -2,6 +2,7 @@ body {
     background-color: cornflowerblue;
     margin: 0;
     overflow: auto; 
+    color: white;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -27,10 +28,25 @@ li a {
     text-align: center;
     padding: 20px 24px;
     text-decoration: none;
+    cursor: pointer;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
 }
 
 li a:hover:not(.left) {
     background-color: grey;
+}
+
+body div div {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
 }
 
 div {
@@ -74,6 +90,8 @@ input[type="button"], input[type="submit"] {
     outline: none;
     border: none;
     border-bottom-color: transparent;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
 }
 
 textarea {
@@ -81,6 +99,10 @@ textarea {
     margin: 0px;
     border: none;
     border-bottom-color: transparent;
+}
+
+img {
+    border:10px solid white;
 }
 
 .message {
@@ -98,34 +120,6 @@ textarea {
     padding: 16px;
 }
 
-#home {
-    background-image: url("clouds.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height:100vh;
-}
-
-#about {
-    background-image: url(nightsky.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height:100vh;
-}
-
-#resume {
-    background-image: url(IMG_1043.JPG);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height:100vh;
-}
-
-#contact {
-    background-image: url(Yosemite%20Tunnel%20View.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height:100vh;
-}
-
-img {
-    border:10px solid white;
+.sec_title {
+    font-size: 72px;
 }
