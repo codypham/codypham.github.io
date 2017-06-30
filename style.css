@@ -123,3 +123,12 @@ img {
 .sec_title {
     font-size: 72px;
 }
+
+.button:hover {
+    background-color: grey;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
