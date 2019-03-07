@@ -4,4 +4,4 @@ Welcome to the source code for codypham.github.io. The site can be accessed at c
 
 ## Link
 
-http://codypham.com
+[codypham.com](https://codypham.com)
